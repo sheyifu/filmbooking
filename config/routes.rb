@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'map/index'
+
   resources :news do
   resources :comments, except: [:show, :index]
 end 

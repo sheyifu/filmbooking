@@ -13,6 +13,7 @@ source 'https://rubygems.org'
     gem 'searchkick', '~> 1.0', '>= 1.0.3'
     gem 'polylines'
     gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
+    gem 'geocoder'
 
     
 
