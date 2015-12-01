@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
+  resources :news do
+  resources :comments, except: [:show, :index]
+end 
 
-  
   resources :movies do
     collection do
       get 'search'
@@ -18,7 +20,9 @@ end
           get 'help'    => 'static_pages#help'
           get 'about'   => 'static_pages#about'
           get 'contact' => 'static_pages#contact'
-          get 'news'    => 'static_pages#news'
+          get 'order'    => 'static_pages#order'
+          get 'cinema'    => 'static_pages#cinema'
+          
           get 'area'    => 'static_pages#area'
           get 'signup'  => 'users#new'
           get 'users/new'

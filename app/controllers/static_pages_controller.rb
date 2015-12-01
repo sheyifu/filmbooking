@@ -9,9 +9,15 @@ class StaticPagesController < ApplicationController
           
   end
 
-  def news
+  def order
           
   end
+
+def cinema
+          
+  end
+
+  
 
   def area
           

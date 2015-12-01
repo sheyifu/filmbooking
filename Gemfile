@@ -11,6 +11,8 @@ source 'https://rubygems.org'
     
     gem 'paperclip',    '~> 4.2.0'
     gem 'searchkick', '~> 1.0', '>= 1.0.3'
+    gem 'polylines'
+    gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
 
     
 
@@ -20,6 +22,7 @@ source 'https://rubygems.org'
       gem 'byebug',      '3.4.0'
       gem 'web-console', '2.0.0.beta3'
       gem 'spring',      '1.1.3'
+
     end
 
     group :production do

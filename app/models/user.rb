@@ -11,7 +11,9 @@ class User < ActiveRecord::Base
      has_secure_password     
 
      has_many :movies
+     has_many :news
      has_many :reviews, dependent: :destroy
+     has_many :comments, dependent: :destroy
 
      
       def User.digest(string)

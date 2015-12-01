@@ -1,0 +1,48 @@
+
+<h1>News</h1>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+    	<div class="col-md-4">
+    		<td><strong>Title:</strong></td>
+<td><%= @news.title %></td>
+<%= image_tag @news.image.url(:medium) %>
+<div class="table-responsive">
+<table class="table">
+<tbody>
+<tr>
+
+
+
+
+
+
+<td><strong>Context:</strong></td>
+<td><%= @news.context %></td>
+</table>
+</tbody>
+<%= link_to "Comment Now!", new_news_comment_path(@news)%>
+
+
+</div>
+</div>
+<div class="col-md-7 col-md-offset-1">
+        <h1>Comments List</h1>
+        <% if @comments.blank? %>
+          <h3>No commments just yet, would you like to add the first!</h3>
+          <%= link_to "Comment Now!", new_news_comment_path(@news), class: "btn btn-danger" %>
+        <% else %>
+          <% @comments.each do |comment| %>
+            <div class="comments">
+            	<p><%= comment.comment %></p>
+            	</div>
+          <% end %>
+        <% end %>
+        </div>
+        </div>
+</div>
+</div>
+
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>

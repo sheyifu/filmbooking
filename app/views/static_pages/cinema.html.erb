@@ -1,0 +1,14 @@
+<% provide(:title, 'Cinema') %>
+ 
+        <h1>Choose the Cinemas</h1>
+        <p>
+         You can choose the cinemas here,and you can see the film list after that
+        </p>
+        <!-- <br /> <br /> Code highlighting produced by Actipro CodeHighlighter (freeware)<br /> http://www.CodeHighlighter.com/<br /> <br /> -->Which city is yours：<br/> 
+<input type="radio" name="item" value="Waterford"/>Waterford Cinema
+<input type="radio" name="item" value="Dubiln"/>Dubiln Cinema
+<input type="radio" name="item" value="Cork"/>Cork Cinema
+<input type="radio" name="item" value="Nanjing"/>Nanjing  Cinema
+<p>
+        </p>
+     <%= link_to "OK!", movies_path, class: "btn btn-lg btn-primary" %>
