@@ -1,0 +1,8 @@
+.reply.clearfix
+	.content
+		%p.reply_content= reply.reply
+		%p.reply_author= reply.user.name
+	.buttons
+		= link_to "Edit", edit_post_reply_path(reply.post, reply)
+		|
+		= link_to "Delete", [reply.post, reply], method: :delete, data: { confirm: "Are you sure?" }	

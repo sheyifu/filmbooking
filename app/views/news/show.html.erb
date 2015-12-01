@@ -35,6 +35,7 @@
           <% @comments.each do |comment| %>
             <div class="comments">
             	<p><%= comment.comment %></p>
+              <p><%= comment.user.name %></p>
             	</div>
           <% end %>
         <% end %>

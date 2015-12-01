@@ -14,7 +14,9 @@ source 'https://rubygems.org'
     gem 'polylines'
     gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
     gem 'geocoder'
-
+    gem 'simple_form', '~> 3.2'
+    gem 'haml-rails'
+    gem 'haml'
     
 
 

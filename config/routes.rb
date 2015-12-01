@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   
   get 'map/index'
 
+  resources :posts do
+    resources :replies
+  end
+
   resources :news do
   resources :comments, except: [:show, :index]
 end 

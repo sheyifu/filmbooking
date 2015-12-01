@@ -1,0 +1,10 @@
+- @posts.each do |post|
+  %h2= link_to post.title, post, class: "button" 
+  %p
+    Publishd at
+    = time_ago_in_words(post.created_at)
+    by
+    = post.user.name
+
+= link_to "New Post", new_post_path, class: "btn btn-lg btn-primary" 
+
