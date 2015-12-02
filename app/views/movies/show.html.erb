@@ -31,8 +31,8 @@
               </tr>
             </tbody>
           </table>
-          <%= link_to "Book This Movie", order_path(@movie)%>|
-          <%= link_to "Write Review", new_movie_review_path(@movie) %>
+          <%= link_to "Book This Movie", current_user, class: "button" %>|
+          <%= link_to "Write Review", new_movie_review_path(@movie),class: "button"  %>
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1">
@@ -44,10 +44,14 @@
           <%= link_to "Write Review", new_movie_review_path(@movie), class: "btn btn-info" %>
         <% else %>
           <% @reviews.each do |review| %>
+          <div class="table-responsive">
+          <table class="table">
             <div class="reviews">
               <div class="star-rating" data-score= <%= review.rating %> ></div>
               <p><%= review.comment %></p>
               <p><%= review.user.name %></p>
+              </div>
+              </table>
 
             </div>
           <% end %>

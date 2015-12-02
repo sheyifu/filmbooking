@@ -9,9 +9,7 @@ class StaticPagesController < ApplicationController
           
   end
 
-  def order
-          
-  end
+  
 
 def cinema
           

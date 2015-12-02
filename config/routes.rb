@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
   get 'map/index'
 
+  
+
   resources :posts do
     resources :replies
   end
@@ -16,7 +18,7 @@ end
     end
   resources :reviews, except: [:show, :index]
 end
-
+ 
 
   get 'sessions/new'
 
@@ -26,7 +28,7 @@ end
           get 'help'    => 'static_pages#help'
           get 'about'   => 'static_pages#about'
           get 'contact' => 'static_pages#contact'
-          get 'order'    => 'static_pages#order'
+          
           get 'cinema'    => 'static_pages#cinema'
           
           get 'area'    => 'static_pages#area'
