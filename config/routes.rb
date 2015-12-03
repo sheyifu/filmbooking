@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   get 'map/index'
 
-  
+  resources :orders
 
   resources :posts do
     resources :replies

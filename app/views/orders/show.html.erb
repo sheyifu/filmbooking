@@ -1,0 +1,29 @@
+<h1>Your Order</h1>
+
+<% if @orders.empty? %>
+<p>Your order is empty</p>
+<% else%>
+<br><br><br>
+
+<% total = 0 %>
+There is the films you booked:
+
+<ul>
+	<% @orders.each do |order|%>
+<Li>
+
+	<div class="field">
+
+
+		<tr>
+			<td><%= order.movie_title%></td>
+		</tr>
+	</div>
+</Li>
+<% end%>
+</ul>
+<% end%>
+
+
+
+
