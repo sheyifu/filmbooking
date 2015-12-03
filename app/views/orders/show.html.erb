@@ -1,12 +1,13 @@
 <h1>Your Order</h1>
 
+
 <% if @orders.empty? %>
 <p>Your order is empty</p>
 <% else%>
 <br><br><br>
 
 <% total = 0 %>
-There is the films you booked:
+<strong>There is the films you booked:</strong>
 
 <ul>
 	<% @orders.each do |order|%>
@@ -17,12 +18,14 @@ There is the films you booked:
 
 		<tr>
 			<td><%= order.movie_title%></td>
+			<td><%= order.user_id%></td>
 		</tr>
 	</div>
 </Li>
 <% end%>
 </ul>
 <% end%>
+
 
 
 
