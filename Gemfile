@@ -17,6 +17,7 @@ source 'https://rubygems.org'
     gem 'simple_form', '~> 3.2'
     gem 'haml-rails'
     gem 'haml'
+    gem 'yui-compressor', '~> 0.12.0'
     
 
 
